@@ -1,14 +1,13 @@
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 96px;
+  max-height: 293px; /*подстройка под макет пиксель в пиксель*/
 }
 
 .content-section_theme {
   background-color: #fff;
-  color: #000;
 }
 
 .header__menu {
@@ -19,7 +18,7 @@
   display: flex;
   max-width: 392px;
   justify-content: space-between;
-  gap: 12px;
+  /*gap: 32px;*/
   list-style: circle;
   align-items: center;
   text-underline-offset: 3px; /*Отступ подчеркивания*/
@@ -54,13 +53,8 @@
 }
 
 .header__address {
-  grid-column: 3 / 4;
   justify-self: end;
-  align-items: flex-start;
-  display: flex;
   max-width: 240px;
-  flex-direction: column;
-  list-style: none;
 }
 
 address {
@@ -87,7 +81,6 @@ address {
 }
 
 .overlay {
-  content: "";
   position: absolute;
   inset: 0;
   background-color: rgb( 0 0 0 / 0.6);
@@ -109,6 +102,9 @@ address {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   margin-right: -30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .text-accent {
@@ -121,7 +117,6 @@ address {
 
 .text-right {
   text-align: right;
-  text-align: end;
 }
 
 .cover__description {
@@ -135,7 +130,7 @@ address {
   font-size: 22px;
   color: #fff;
   font-family: 'Raleway', sans-serif;
-  line-height: 127%;
+  line-height: 1.27;
   text-transform: uppercase;
   word-spacing: 18px;
 }
@@ -143,7 +138,6 @@ address {
 .bet-button {
   background: transparent;
   border: 1px solid #fff;
-  font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
@@ -152,7 +146,8 @@ address {
 }
 
 .lots {
-  padding: 180px 24px 0;
+  margin-top: 180px;
+  padding: 0 24px;
 }
 
 .lots__heading {
@@ -162,8 +157,6 @@ address {
 
 .lots__card-list {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   gap: 25px;
   list-style: none;
 }
@@ -210,7 +203,7 @@ address {
 
 .card__title {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
   text-decoration: underline;
@@ -246,7 +239,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 35px auto auto 47px;
+  margin: 35px 0 0 47px;
 }
 
 .about__logo-image {
@@ -256,10 +249,11 @@ address {
 
 .about__column {
   margin-top: 133px;
+  margin-left: 25px; /*странное решение, подгонка в пискель(так как расстояние между карточками 25px, а грид мы задаем с фиксированной длинной карточки)*/
 }
 
 .about__title {
-  margin: 0 0 100px;
+  margin-bottom: 100px;
 }
 
 .about__text {
@@ -287,9 +281,9 @@ address {
 
 .footer__social-list {
   display: flex;
-  gap: 48px;
-  justify-content: center;
+  justify-content: flex-end;
   list-style: none;
+  gap: 48px;
 }
 
 .footer__social-icon {
