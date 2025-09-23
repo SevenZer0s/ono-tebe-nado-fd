@@ -83,11 +83,12 @@ address {
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgb( 0 0 0 / 0.6);
+  background-color: rgb(0 0 0 / 0.6);
   z-index: 0;
 }
 
-.cover__title, .cover__description {
+.cover__title,
+.cover__description {
   position: relative;
   z-index: 1;
 }
@@ -96,7 +97,7 @@ address {
   min-height: 385px;
   color: #fff;
   font-size: 100px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   line-height: 1.15;
   letter-spacing: 0.3em;
@@ -129,7 +130,7 @@ address {
 .cover__description-text {
   font-size: 22px;
   color: #fff;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.27;
   text-transform: uppercase;
   word-spacing: 18px;
@@ -196,7 +197,8 @@ address {
   background-image: url(../images/card-lot-03.jpg);
 }
 
-.card__title, .card__text {
+.card__title,
+.card__text {
   position: relative;
   z-index: 1;
 }
@@ -249,7 +251,7 @@ address {
 
 .about__column {
   margin-top: 133px;
-  margin-left: 25px; /*странное решение, подгонка в пискель(так как расстояние между карточками 25px, а грид мы задаем с фиксированной длинной карточки)*/
+  margin-left: 25px; /*странное решение, подгонка в пискель(так как расстояние между карточками 25px, а грид мы задаем с фиксированной длинной карточки.)*/
 }
 
 .about__title {
