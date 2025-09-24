@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 96px;
+  padding: 93px 50px 95px;
 }
 
 .content-section_theme {
@@ -44,10 +44,11 @@
   display: block;
   grid-column: 2 / 3;
   width: 148px;
+  height: 105px;
 }
 
 .header__logo-image {
-  width: 100%;
+  width: 90%;
 }
 
 .header__address {
