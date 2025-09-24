@@ -3,7 +3,6 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 96px;
-  max-height: 293px; /*подстройка под макет пиксель в пиксель*/
 }
 
 .content-section_theme {
@@ -18,7 +17,6 @@
   display: flex;
   max-width: 392px;
   justify-content: space-between;
-  /*gap: 32px;*/
   list-style: circle;
   align-items: center;
   text-underline-offset: 3px; /*Отступ подчеркивания*/
@@ -94,7 +92,6 @@ address {
 }
 
 .cover__title {
-  min-height: 385px;
   color: #fff;
   font-size: 100px;
   font-family: "Raleway", sans-serif;
@@ -138,7 +135,7 @@ address {
 
 .bet-button {
   background: transparent;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
@@ -160,11 +157,17 @@ address {
   display: flex;
   gap: 25px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
   width: 334px;
   min-height: 596px;
+}
+
+.lots__more {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .card-link {
@@ -263,6 +266,7 @@ address {
   flex-direction: column;
   gap: 24px;
   line-height: 24px;
+  font-size: 20px;
 }
 
 .footer {
@@ -279,11 +283,6 @@ address {
 
 .footer__menu-list {
   list-style: none;
-  font-size: 50;
-}
-
-.footer__menu-list-item {
-  font-size: 18px;
 }
 
 .footer__social-list {
