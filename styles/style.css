@@ -270,7 +270,7 @@ address {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 180px;
-  padding: 0 50px;
+  padding: 0 50px 80px 50px;
 }
 
 .footer__menu {
